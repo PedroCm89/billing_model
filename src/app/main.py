@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+#  uv run fastapi dev
+
 app = FastAPI()
 
 
