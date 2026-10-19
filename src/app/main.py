@@ -1,13 +1,6 @@
-from fastapi import FastAPI, status
+from fastapi import FastAPI
+from app.api.routers.endpoint import router
 #  uv run fastapi dev
 
 app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-@app.get("/health", status_code = status.HTTP_200_OK)
-async def health_check():
-    return {"status": "healthy"}
+app.include_router(router)
