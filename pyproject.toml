@@ -24,5 +24,10 @@ entrypoint = "app.main:app"
 requires = ["uv_build>=0.12.7,<0.13.0"]
 build-backend = "uv_build"
 
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
 [tool.uv.build-backend]
 module-name = "app"
