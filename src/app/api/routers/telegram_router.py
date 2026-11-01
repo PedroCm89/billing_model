@@ -1,7 +1,7 @@
 import secrets
 from app.core.config import settings
 from fastapi import APIRouter, status, Header, HTTPException
-from app.schemas.telegram import TelegramUpdate
+from app.schemas.telegram_schema import TelegramUpdate
 
 
 
